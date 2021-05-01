@@ -31,8 +31,6 @@ public class HandButton : XRBaseInteractable
     {
         hoverInteractor = args.interactor;
         previousHandHeight = GetLocalYPosition(args.interactor.transform.position);
-
-        Debug.Log("Start press");
     }
 
     private void EndPress(HoverExitEventArgs args)
@@ -42,8 +40,6 @@ public class HandButton : XRBaseInteractable
 
         previousPress = false;
         SetYPosition(yMax);
-
-        Debug.Log("End Press");
     }
 
     private void Start()
