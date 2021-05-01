@@ -4,7 +4,22 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/DevScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/ArithScene.unity
+    guid: 0ad1f2c9f26dbdb44a05bcaf8d7bcf36
+  - enabled: 1
+    path: Assets/Scenes/Claustro-Scene.unity
+    guid: 4f27f1175e840274f936e29e910ec3e4
+  - enabled: 1
+    path: Assets/Scenes/HighScene.unity
+    guid: af8cb6fab9aac3f428cf8918513515c6
+  - enabled: 1
+    path: Assets/Scenes/Step-Scene.unity
+    guid: b4d14079c086678469df93f039a6e359
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b90c049a77ea8c341bd40d16f35ba961,
       type: 2}

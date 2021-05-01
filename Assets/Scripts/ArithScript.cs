@@ -13,18 +13,17 @@ public class ArithScript : MonoBehaviour
         int random = Random.Range(0, 9);
         text.text = random.ToString();
 
-        Destroy(this, 10);
+        Destroy(this.gameObject, 7);
     }
 
     private void FixedUpdate()
     {
         Vector3 pos = transform.position;
-        pos.z += risingSpeed * Time.deltaTime;
+        pos.y += risingSpeed * Time.deltaTime;
         transform.position = pos;
 
         Transform aimPoint = Camera.main.transform;
-        Vector3 aimDir = (aimPoint.position - transform.position).normalized;
+        Vector3 aimDir = (transform.position - aimPoint.position).normalized;
         transform.rotation = Quaternion.LookRotation(aimDir);
-
     }
 }

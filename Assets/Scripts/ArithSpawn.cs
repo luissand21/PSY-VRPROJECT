@@ -16,7 +16,7 @@ public class ArithSpawn : MonoBehaviour
     {
         if (Time.time >= nextTime)
         {
-            nextTime = Time.time + Random.Range(10.0f, 20.0f);
+            nextTime = Time.time + Random.Range(GetAugmentedRange(), GetAugmentedRange() + GetAugmentedRange());
             SpawnRandomNumber();
         }
     }
@@ -25,5 +25,11 @@ public class ArithSpawn : MonoBehaviour
     {
         GameObject go = Instantiate(numberPrefab, null);
         go.transform.position = transform.position + (Random.insideUnitSphere * (Random.Range(0.1f, 4.5f)));
+    }
+
+    float GetAugmentedRange()
+    {
+        float alteredTime = Mathf.Clamp(Mathf.Pow(10.0f, -(Time.timeSinceLevelLoad / 100)), 0.1f, 20);
+        return alteredTime;
     }
 }
