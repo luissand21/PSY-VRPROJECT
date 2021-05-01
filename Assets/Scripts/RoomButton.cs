@@ -8,24 +8,24 @@ public class RoomButton : MonoBehaviour
 
     public string newScene;
     public Transform buttonTop;
-    private float zOffset;
+    private float yOffset;
     private bool isPressed = false;
 
     void Start()
     {
-        zOffset = buttonTop.localPosition.z;
+        yOffset = buttonTop.localPosition.y;
     }
 
     void FixedUpdate()
     {
-        float z = buttonTop.localPosition.z;
+        float y = buttonTop.localPosition.y;
 
-        if (!isPressed && (z / zOffset) <= 0.5)
+        if (!isPressed && (y / yOffset) <= 0.5)
         {
             isPressed = true;
-            SceneManager.LoadScene(newScene);
+            //SceneManager.LoadScene(newScene);
         }
-        else if (isPressed && (z / zOffset) > 0.5)
+        else if (isPressed && (y / yOffset) > 0.5)
             isPressed = false;
     }
 }
