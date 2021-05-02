@@ -635,7 +635,7 @@ LineRenderer:
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.005
+    widthMultiplier: 0.02
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1097,7 +1097,7 @@ LineRenderer:
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.005
+    widthMultiplier: 0.02
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1816,6 +1816,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6249781375740800102, guid: ceec034cf92d19d45881e96d54925650,
+        type: 3}
+      propertyPath: newScene
+      value: FORESTT
+      objectReference: {fileID: 0}
     - target: {fileID: 6892872612892499998, guid: ceec034cf92d19d45881e96d54925650,
         type: 3}
       propertyPath: m_RootOrder
